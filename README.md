@@ -1,4 +1,4 @@
-# A seed for performance tests
+# A Gatling🔫 giter8 seed for performance tests
 scala, sbt, gatling 3.3 with logback configured 
 
 # Usage
