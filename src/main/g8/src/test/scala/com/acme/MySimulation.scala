@@ -4,6 +4,6 @@ import scala.concurrent.duration._
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._
 
-class MySimulation extends Simulation {
-
+trait ComputerDatabaseApi extends Simulation {
+  val home = http("home").get("/")
 }
