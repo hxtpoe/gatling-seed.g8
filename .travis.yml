@@ -1,0 +1,6 @@
+language: scala
+scala:
+  - 2.12.2
+sbt_args: -no-colors
+script:
+  - sbt g8Test
