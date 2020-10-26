@@ -12,7 +12,7 @@ lazy val root = (project in file("."))
     javaOptions in Gatling := overrideDefaultJavaOptions("-Xms1024m", "-Xmx2048m"),
     scalacOptions := Seq(
       "-encoding", "UTF-8", "-target:jvm-1.8", "-deprecation",
-      "-feature", "-unchecked", "-language:implicitConversions", "-language:postfixOps"),
+      "-feature", "-unchecked", "-language:implicitConversions", "-language:postfixOps", "-Xlint:unused"),
     libraryDependencies += scalaTest % Test,
     libraryDependencies += "io.gatling.highcharts" % "gatling-charts-highcharts" % "3.3.1" % "test,it",
     libraryDependencies += "io.gatling"            % "gatling-test-framework"    % "3.3.1" % "test,it")
